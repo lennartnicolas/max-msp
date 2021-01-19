@@ -3,3 +3,6 @@
 
 # Ignore my bachelor thesis project for now
 bachelor-thesis/
+
+# Ignore audio folder for now
+audio/
