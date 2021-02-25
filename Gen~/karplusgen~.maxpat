@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1886.0, -164.0, 885.0, 546.0 ],
+		"rect" : [ -1559.0, -118.0, 724.0, 548.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,45 +40,62 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Ableton Sans Medium",
+					"fontsize" : 18.0,
+					"id" : "obj-1",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 32.0, 24.0, 245.0, 28.0 ],
+					"presentation_linecount" : 10,
+					"text" : "Karplus-Strong with Codebox"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Ableton Sans Medium",
 					"id" : "obj-30",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 51.0, 165.0, 35.0, 20.0 ],
-					"presentation_linecount" : 2,
+					"patching_rect" : [ 48.0, 199.0, 37.0, 21.0 ],
 					"text" : "Input"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Ableton Sans Medium",
 					"id" : "obj-29",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 234.0, 164.0, 34.0, 20.0 ],
+					"patching_rect" : [ 148.0, 199.0, 35.0, 21.0 ],
 					"text" : "Note"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Ableton Sans Medium",
 					"id" : "obj-26",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 296.0, 138.0, 61.0, 20.0 ],
+					"patching_rect" : [ 232.0, 199.0, 60.0, 21.0 ],
 					"text" : "Feedback"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Ableton Sans Medium",
 					"id" : "obj-24",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 396.0, 138.0, 57.0, 20.0 ],
+					"patching_rect" : [ 332.0, 199.0, 56.0, 21.0 ],
 					"text" : "Damping"
 				}
 
@@ -260,7 +277,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 96.0, 163.0, 81.0, 22.0 ],
+					"patching_rect" : [ 32.0, 224.0, 81.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -290,7 +307,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ -3296.0, -8.0, 1135.0, 479.0 ],
+						"rect" : [ -1690.0, 26.0, 1225.0, 738.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -325,7 +342,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 847.0, 63.0, 237.0, 22.0 ],
+									"patching_rect" : [ 910.0, 52.0, 237.0, 22.0 ],
 									"text" : "in 4 @min 0 @max 1 @comment Damping"
 								}
 
@@ -336,7 +353,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 163.999999999999545, 415.0, 35.0, 22.0 ],
+									"patching_rect" : [ 57.999999999999773, 618.0, 35.0, 22.0 ],
 									"text" : "out 1"
 								}
 
@@ -348,7 +365,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 545.333333333333258, 63.0, 282.0, 22.0 ],
+									"patching_rect" : [ 585.333333333333258, 52.0, 282.0, 22.0 ],
 									"text" : "in 3 @min 0.01 @max 0.999 @comment Feedback"
 								}
 
@@ -360,7 +377,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 354.666666666666629, 63.0, 151.0, 22.0 ],
+									"patching_rect" : [ 321.666666666666515, 52.0, 151.0, 22.0 ],
 									"text" : "in 2 @comment Note Input"
 								}
 
@@ -372,14 +389,14 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 164.0, 63.0, 123.0, 22.0 ],
+									"patching_rect" : [ 58.0, 52.0, 123.0, 22.0 ],
 									"text" : "in 1 @comment Input"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"code" : "Delay delay_1(samplerate);\r\nHistory history_1(0);\r\nnote = in2;\r\nfeedback = in3;\r\ninput = in1;\r\ndamping = in4;\r\n\ndTime = samplerate / mtof(note, 440);\noutput = delay_1.read(dTime);\nout1 = output;\r\nmix1 = mix((output * feedback), history_1, damping);\r\nhistory_next = fixdenorm(mix1);\r\n\r\ndelay_1.write(history_1 + input);\r\nhistory_1 = history_next;",
+									"code" : "Delay delay_1(samplerate); // Delay object\r\nHistory history_1(0); // History object (single sample delay)\r\ninput = in1; // Input signal\r\nnote = in2; // MIDI note\r\nfeedback = in3; // Decay time\r\ndamping = in4; // Damping factor (mix)\r\n\r\n\r\n\n// Calculating the delay time ('Periodicity Pitch') with (samplerate / frequency)\r\ndTime = samplerate / mtof(note, 440);\r\n\r\n\r\n\r\n/* --------------- Feedback Delay --------------------- */\r\n\noutput = delay_1.read(dTime); // <---- Read from delay \r\n\nout1 = output; // Read from delay and route to output\r\ndecay = (output * feedback); // Multiply the signal with values < 1\r\nmix1 = mix(decay, history_1, damping); // Mix the filtered signal with the dry signal to create damping\r\n\r\ndelay_1.write(history_1 + input); // ----> Write to delay\r\nhistory_1 = mix1; // Delay the signal by one sample\r\n\r\n/* --------------- Feedback Delay --------------------- */",
 									"fontface" : 0,
 									"fontname" : "<Monospaced>",
 									"fontsize" : 12.0,
@@ -388,7 +405,7 @@
 									"numinlets" : 4,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 163.999999999999545, 112.0, 591.000000000000455, 274.0 ]
+									"patching_rect" : [ 57.999999999999773, 109.0, 810.000000000000227, 459.0 ]
 								}
 
 							}
@@ -424,7 +441,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-2", 3 ],
-									"midpoints" : [ 856.5, 98.0, 745.5, 98.0 ],
+									"midpoints" : [ 919.5, 87.0, 858.500000000000114, 87.0 ],
 									"source" : [ "obj-7", 0 ]
 								}
 
@@ -432,7 +449,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 96.0, 225.0, 319.0, 22.0 ],
+					"patching_rect" : [ 32.0, 286.0, 319.0, 22.0 ],
 					"text" : "gen~"
 				}
 
@@ -444,7 +461,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "int" ],
-					"patching_rect" : [ 185.5, 117.0, 29.5, 22.0 ],
+					"patching_rect" : [ 121.5, 150.0, 29.5, 22.0 ],
 					"text" : "t b i"
 				}
 
@@ -455,7 +472,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 96.0, 417.0, 45.0, 45.0 ]
+					"patching_rect" : [ 32.0, 478.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -468,7 +485,7 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 96.0, 270.0, 48.0, 136.0 ],
+					"patching_rect" : [ 32.0, 331.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~",
@@ -492,7 +509,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 196.0, 163.0, 31.0, 22.0 ],
+					"patching_rect" : [ 132.0, 224.0, 50.0, 22.0 ],
 					"text" : "sig~"
 				}
 
@@ -506,7 +523,7 @@
 					"offset" : 7,
 					"outlettype" : [ "int", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 185.5, 46.0, 540.0, 53.0 ],
+					"patching_rect" : [ 121.5, 79.0, 540.0, 53.0 ],
 					"range" : 77
 				}
 
@@ -522,8 +539,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 396.0, 163.0, 56.0, 22.0 ],
-					"sig" : 0.68
+					"patching_rect" : [ 332.0, 224.0, 56.0, 22.0 ],
+					"sig" : 0.037
 				}
 
 			}
@@ -538,8 +555,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 296.0, 163.0, 56.0, 22.0 ],
-					"sig" : 0.99
+					"patching_rect" : [ 232.0, 224.0, 56.0, 22.0 ],
+					"sig" : 0.947
 				}
 
 			}
@@ -547,7 +564,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
-					"midpoints" : [ 195.0, 150.5, 105.5, 150.5 ],
+					"midpoints" : [ 131.0, 182.5, 41.5, 182.5 ],
 					"source" : [ "obj-11", 0 ]
 				}
 
